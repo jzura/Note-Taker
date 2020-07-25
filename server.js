@@ -19,10 +19,10 @@ server.use(express.static(staticDir));
 
 // Routes
 server.get("/", function (request, response) {
-    response.sendFile(path.join(staticDir, "../public/index.html"));
+    response.sendFile(path.join(staticDir, "index.html"));
 });
 
 server.get("/notes", function (request, response) {
-    response.sendFile(path.join(staticDir, "../public/notes.html"));
+    response.sendFile(path.join(staticDir, "notes.html"));
 });
 
