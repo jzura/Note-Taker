@@ -26,3 +26,7 @@ server.get("/notes", function (request, response) {
     response.sendFile(path.join(staticDir, "notes.html"));
 });
 
+// Starts the server to begin listening
+server.listen(PORT, function () {
+    console.log("server listening on PORT " + PORT);
+});
